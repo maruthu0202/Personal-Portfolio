@@ -97,12 +97,12 @@
     .nav-link:hover {
       color: #14b8a6 !important;
     }
-    .cert-preview {
-      transition: all 0.3s ease;
-    }
-    .cert-preview:hover {
-      transform: scale(1.03);
-      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.4);
+    .pdf-preview {
+      height: 260px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #334155;
     }
   </style>
 </head>
@@ -172,7 +172,7 @@
         <a href="#projects" class="px-10 py-5 bg-teal-600 hover:bg-teal-500 text-white font-semibold rounded-xl transition shadow-xl shadow-teal-900/30 text-lg md:text-xl">
           Explore My Work →
         </a>
-        <a href="resume-maruthu-2026.pdf" download
+        <a href="Resume/MARUTHU B_2127230801056.pdf" download
            class="px-10 py-5 border-2 border-teal-600 hover:bg-teal-600/20 text-teal-400 hover:text-white font-semibold rounded-xl transition flex items-center gap-3 text-lg md:text-xl">
           <i class="fa-solid fa-file-arrow-down text-xl"></i>
           Download Resume
@@ -266,164 +266,218 @@
     </div>
   </section>
 
-  <!-- CERTIFICATIONS - All your certificates with image previews -->
+  <!-- CERTIFICATIONS -->
   <section id="certifications" class="py-28 border-t border-slate-800 bg-slate-950/50" data-aos="fade-up">
     <div class="max-w-9xl mx-auto px-6 lg:px-16">
       <h2 class="text-5xl md:text-6xl font-bold gradient-text text-center mb-20">Certifications</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <!-- 1. Introduction to Cybersecurity Fundamentals -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-cyber-fundamentals.jpg" alt="Introduction to Cybersecurity Fundamentals" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">Introduction to Cybersecurity Fundamentals</h3>
-          <p class="text-teal-400 text-sm">Coursera</p>
-          <p class="text-slate-400 text-xs mt-1">24 Jun 2025</p>
-        </div>
-
-        <!-- 2. Blockchain Basics -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-blockchain-basics.jpg" alt="Blockchain Basics" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">Blockchain Basics</h3>
-          <p class="text-teal-400 text-sm">Coursera • University at Buffalo</p>
-          <p class="text-slate-400 text-xs mt-1">13 Aug 2025</p>
-        </div>
-
-        <!-- 3. Cybersecurity Essentials -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-cybersecurity-essentials.jpg" alt="Cybersecurity Essentials" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">Cybersecurity Essentials</h3>
-          <p class="text-teal-400 text-sm">Cisco Networking Academy • EdCreate Foundation</p>
-          <p class="text-slate-400 text-xs mt-1">26 Dec 2025</p>
-        </div>
-
-        <!-- 4. Introduction to Networking -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-networking.jpg" alt="Introduction to Networking" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">Introduction to Networking</h3>
-          <p class="text-teal-400 text-sm">Coursera • NVIDIA</p>
-          <p class="text-slate-400 text-xs mt-1">19 Jul 2025</p>
-        </div>
-
-        <!-- 5. Testing throughout the Software Life Cycle -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-software-lifecycle.jpg" alt="Testing throughout the Software Life Cycle" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">Testing throughout the Software Life Cycle</h3>
-          <p class="text-teal-400 text-sm">Infosys Springboard</p>
-          <p class="text-slate-400 text-xs mt-1">03 Apr 2025</p>
-        </div>
-
-        <!-- 6. MySQL: Getting Started -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-mysql.jpg" alt="MySQL: Getting Started" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">MySQL: Getting Started</h3>
-          <p class="text-teal-400 text-sm">Infosys Springboard</p>
-          <p class="text-slate-400 text-xs mt-1">11 Aug 2024</p>
-        </div>
-
-        <!-- 7. Python Fundamentals for Beginners -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-python.jpg" alt="Python Fundamentals for Beginners" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">Python Fundamentals for Beginners</h3>
-          <p class="text-teal-400 text-sm">Great Learning Academy</p>
-          <p class="text-slate-400 text-xs mt-1">May 2024</p>
-        </div>
-
-        <!-- 8. Java Programming 2022 -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-java-programming.jpg" alt="Java Programming 2022" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">Java Programming 2022</h3>
-          <p class="text-teal-400 text-sm">Infosys Springboard</p>
-          <p class="text-slate-400 text-xs mt-1">15 Nov 2024</p>
-        </div>
-
-        <!-- 9. Data Structures and Algorithms -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-dsa.jpg" alt="Data Structures and Algorithms" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">Data Structures and Algorithms</h3>
-          <p class="text-teal-400 text-sm">Infosys Springboard</p>
-          <p class="text-slate-400 text-xs mt-1">08 Nov 2024</p>
-        </div>
-
-        <!-- 10. JavaScript -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-javascript.jpg" alt="JavaScript" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">JavaScript</h3>
-          <p class="text-teal-400 text-sm">Infosys Springboard</p>
-          <p class="text-slate-400 text-xs mt-1">29 Aug 2025</p>
-        </div>
-
-        <!-- 11. Cybersecurity Analyst Job Simulation -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-forag e-cyber.jpg" alt="Cybersecurity Analyst Job Simulation" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">Cybersecurity Analyst Job Simulation</h3>
-          <p class="text-teal-400 text-sm">Forage • Tata Group</p>
-          <p class="text-slate-400 text-xs mt-1">12 Jul 2025</p>
-        </div>
-
-        <!-- 12. Start Programming in Core JAVA -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-core-java.jpg" alt="Core Java" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">Start Programming in Core Java</h3>
-          <p class="text-teal-400 text-sm">Infosys Springboard</p>
-          <p class="text-slate-400 text-xs mt-1">15 Nov 2024</p>
-        </div>
-
-        <!-- 13. Database Design -->
-        <div class="cert-card bg-slate-900/70 border border-slate-700 rounded-2xl p-6 overflow-hidden hover:border-teal-600/50 transition">
-          <img src="https://i.imgur.com/placeholder-database.jpg" alt="Database Design" class="w-full h-64 object-contain rounded-xl mb-6 bg-white p-4 shadow">
-          <h3 class="text-xl font-bold text-white">Database Design</h3>
-          <p class="text-teal-400 text-sm">Infosys Springboard</p>
-          <p class="text-slate-400 text-xs mt-1">14 Jul 2024</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <!-- PROJECTS – Only your 3 software projects -->
-  <section id="projects" class="py-28 border-t border-slate-800 bg-slate-950/50" data-aos="fade-up">
-    <div class="max-w-9xl mx-auto px-6 lg:px-16">
-      <h2 class="text-5xl md:text-6xl font-bold gradient-text text-center mb-20">Selected Projects</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 hover:border-teal-700/50 transition flex flex-col h-full">
-          <h4 class="text-2xl font-semibold mb-4 text-white">Bookstore API</h4>
-          <p class="text-slate-400 mb-6 flex-grow">
-            Designed normalized MySQL database schema. Implemented RESTful CRUD endpoints with proper HTTP methods, input validation, and exception handling using Java, JDBC and MySQL.
-          </p>
-          <div class="mt-auto">
-            <a href="https://github.com/maruthu0202/bookstore-api" target="_blank" rel="noopener noreferrer"
-               class="project-link inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 font-medium">
-              <i class="fa-brands fa-github text-2xl"></i> View on GitHub
+        <!-- Blockchain Basics -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="pdf-preview">
+            <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Blockchain%20Basics.pdf" 
+                    width="100%" height="100%" class="rounded-xl" title="Blockchain Basics"></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Blockchain Basics</h3>
+            <p class="text-teal-400 text-sm">Coursera • University at Buffalo</p>
+            <p class="text-slate-400 text-xs mt-1">13 Aug 2025</p>
+            <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Blockchain%20Basics.pdf" 
+               target="_blank" class="mt-4 text-teal-400 hover:text-teal-300 text-sm font-medium block">
+              View Full PDF →
             </a>
           </div>
         </div>
 
-        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 hover:border-teal-700/50 transition flex flex-col h-full">
-          <h4 class="text-2xl font-semibold mb-4 text-white">Enterprise ERP System</h4>
-          <p class="text-slate-400 mb-6 flex-grow">
-            Complete 9-module enterprise ERP with role-based access control. Built using React, Java 17, Spring Boot 3.2, MySQL, JWT and Docker.
-          </p>
-          <div class="mt-auto">
-            <a href="https://github.com/maruthu0202/ERP-System" target="_blank" rel="noopener noreferrer"
-               class="project-link inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 font-medium">
-              <i class="fa-brands fa-github text-2xl"></i> View on GitHub
+        <!-- Cybersecurity Essentials -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="pdf-preview">
+            <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Cybersecurity%20Essentials.pdf" 
+                    width="100%" height="100%" class="rounded-xl" title="Cybersecurity Essentials"></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Cybersecurity Essentials</h3>
+            <p class="text-teal-400 text-sm">Cisco Networking Academy • EdCreate Foundation</p>
+            <p class="text-slate-400 text-xs mt-1">26 Dec 2025</p>
+            <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Cybersecurity%20Essentials.pdf" 
+               target="_blank" class="mt-4 text-teal-400 hover:text-teal-300 text-sm font-medium block">
+              View Full PDF →
             </a>
           </div>
         </div>
 
-        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 hover:border-teal-700/50 transition flex flex-col h-full">
-          <h4 class="text-2xl font-semibold mb-4 text-white">Java Malware Detector with VirusTotal API</h4>
-          <p class="text-slate-400 mb-6 flex-grow">
-            Multi-layer malware scanner using VirusTotal API v3, MD5/SHA-256 hashing, entropy analysis, EICAR detection, suspicious string analysis and threat scoring system.
-          </p>
-          <div class="mt-auto">
-            <a href="https://github.com/maruthu0202/Java-Malware-Detector-with-VirusTotal-API" target="_blank" rel="noopener noreferrer"
-               class="project-link inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 font-medium">
-              <i class="fa-brands fa-github text-2xl"></i> View on GitHub
+        <!-- Introduction to Networking -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="pdf-preview">
+            <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Introductionr%20To%20Networking.pdf" 
+                    width="100%" height="100%" class="rounded-xl" title="Introduction to Networking"></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Introduction to Networking</h3>
+            <p class="text-teal-400 text-sm">Coursera • NVIDIA</p>
+            <p class="text-slate-400 text-xs mt-1">19 Jul 2025</p>
+            <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Introductionr%20To%20Networking.pdf" 
+               target="_blank" class="mt-4 text-teal-400 hover:text-teal-300 text-sm font-medium block">
+              View Full PDF →
             </a>
           </div>
         </div>
+
+        <!-- Testing throughout the Software Life Cycle -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="pdf-preview">
+            <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Software%20Life%20cycle.pdf" 
+                    width="100%" height="100%" class="rounded-xl" title="Software Life Cycle Testing"></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Testing throughout the Software Life Cycle</h3>
+            <p class="text-teal-400 text-sm">Infosys Springboard</p>
+            <p class="text-slate-400 text-xs mt-1">03 Apr 2025</p>
+            <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Software%20Life%20cycle.pdf" 
+               target="_blank" class="mt-4 text-teal-400 hover:text-teal-300 text-sm font-medium block">
+              View Full PDF →
+            </a>
+          </div>
+        </div>
+
+        <!-- MySQL: Getting Started -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="pdf-preview">
+            <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/MYSQL.pdf" 
+                    width="100%" height="100%" class="rounded-xl" title="MySQL Getting Started"></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">MySQL: Getting Started</h3>
+            <p class="text-teal-400 text-sm">Infosys Springboard</p>
+            <p class="text-slate-400 text-xs mt-1">11 Aug 2024</p>
+            <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/MYSQL.pdf" 
+               target="_blank" class="mt-4 text-teal-400 hover:text-teal-300 text-sm font-medium block">
+              View Full PDF →
+            </a>
+          </div>
+        </div>
+
+        <!-- Python Fundamentals for Beginners -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="pdf-preview">
+            <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Python.pdf" 
+                    width="100%" height="100%" class="rounded-xl" title="Python Fundamentals"></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Python Fundamentals for Beginners</h3>
+            <p class="text-teal-400 text-sm">Great Learning Academy</p>
+            <p class="text-slate-400 text-xs mt-1">May 2024</p>
+            <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Python.pdf" 
+               target="_blank" class="mt-4 text-teal-400 hover:text-teal-300 text-sm font-medium block">
+              View Full PDF →
+            </a>
+          </div>
+        </div>
+
+        <!-- Java Programming 2022 -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="pdf-preview">
+            <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/JAVA%202002.pdf" 
+                    width="100%" height="100%" class="rounded-xl" title="Java Programming 2022"></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Java Programming 2022</h3>
+            <p class="text-teal-400 text-sm">Infosys Springboard</p>
+            <p class="text-slate-400 text-xs mt-1">15 Nov 2024</p>
+            <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/JAVA%202002.pdf" 
+               target="_blank" class="mt-4 text-teal-400 hover:text-teal-300 text-sm font-medium block">
+              View Full PDF →
+            </a>
+          </div>
+        </div>
+
+        <!-- Data Structures and Algorithms -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="pdf-preview">
+            <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Data%20Structure%20and%20Algorithm.pdf" 
+                    width="100%" height="100%" class="rounded-xl" title="Data Structures and Algorithms"></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Data Structures and Algorithms</h3>
+            <p class="text-teal-400 text-sm">Infosys Springboard</p>
+            <p class="text-slate-400 text-xs mt-1">08 Nov 2024</p>
+            <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Data%20Structure%20and%20Algorithm.pdf" 
+               target="_blank" class="mt-4 text-teal-400 hover:text-teal-300 text-sm font-medium block">
+              View Full PDF →
+            </a>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="pdf-preview">
+            <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/JavaScript.pdf" 
+                    width="100%" height="100%" class="rounded-xl" title="JavaScript"></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">JavaScript</h3>
+            <p class="text-teal-400 text-sm">Infosys Springboard</p>
+            <p class="text-slate-400 text-xs mt-1">29 Aug 2025</p>
+            <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/JavaScript.pdf" 
+               target="_blank" class="mt-4 text-teal-400 hover:text-teal-300 text-sm font-medium block">
+              View Full PDF →
+            </a>
+          </div>
+        </div>
+
+        <!-- Cybersecurity Analyst Job Simulation -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="pdf-preview">
+            <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Forge%20CyberSecurity%20Analyst.pdf" 
+                    width="100%" height="100%" class="rounded-xl" title="Cybersecurity Analyst Job Simulation"></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Cybersecurity Analyst Job Simulation</h3>
+            <p class="text-teal-400 text-sm">Forage • Tata Group</p>
+            <p class="text-slate-400 text-xs mt-1">12 Jul 2025</p>
+            <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Forge%20CyberSecurity%20Analyst.pdf" 
+               target="_blank" class="mt-4 text-teal-400 hover:text-teal-300 text-sm font-medium block">
+              View Full PDF →
+            </a>
+          </div>
+        </div>
+
+        <!-- Start Programming in Core JAVA -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="pdf-preview">
+            <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Core%20Java.pdf" 
+                    width="100%" height="100%" class="rounded-xl" title="Core Java"></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Start Programming in Core Java</h3>
+            <p class="text-teal-400 text-sm">Infosys Springboard</p>
+            <p class="text-slate-400 text-xs mt-1">15 Nov 2024</p>
+            <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Core%20Java.pdf" 
+               target="_blank" class="mt-4 text-teal-400 hover:text-teal-300 text-sm font-medium block">
+              View Full PDF →
+            </a>
+          </div>
+        </div>
+
+        <!-- Database Design -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="pdf-preview">
+            <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/DATABASE.pdf" 
+                    width="100%" height="100%" class="rounded-xl" title="Database Design"></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Database Design</h3>
+            <p class="text-teal-400 text-sm">Infosys Springboard</p>
+            <p class="text-slate-400 text-xs mt-1">14 Jul 2024</p>
+            <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/DATABASE.pdf" 
+               target="_blank" class="mt-4 text-teal-400 hover:text-teal-300 text-sm font-medium block">
+              View Full PDF →
+            </a>
+          </div>
+        </div>
+
+        <!-- Add remaining certificates using the same pattern -->
+
       </div>
     </div>
   </section>
@@ -435,17 +489,22 @@
       <div class="max-w-4xl mx-auto bg-slate-900/70 border border-slate-700 rounded-2xl p-10">
         <h3 class="text-2xl font-bold mb-4">Comprehensive Analysis of Social Engineering Attacks on Social Media Platforms (2000-2030)</h3>
         <p class="text-slate-400 mb-8">
-          IEEE-format research paper analyzing historical evolution, prevention strategies, and future projections of social engineering attacks. Introduced SEAR metric and multi-layered defense framework.
+          IEEE-format research paper analyzing historical evolution, prevention strategies, and future projections of social engineering attacks on social media platforms.
         </p>
-        <a href="article.pdf" target="_blank" class="inline-flex items-center gap-3 text-teal-400 hover:text-teal-300 font-medium">
-          <i class="fa-solid fa-file-lines text-xl"></i>
-          View Full Research Paper (PDF)
+        <div class="h-96 bg-white p-4 rounded-xl mb-6 overflow-hidden shadow">
+          <iframe src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/article.pdf" 
+                  width="100%" height="100%" class="rounded-lg" title="Research Paper"></iframe>
+        </div>
+        <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/article.pdf" 
+           target="_blank" class="inline-flex items-center gap-3 text-teal-400 hover:text-teal-300 font-medium text-lg">
+          <i class="fa-solid fa-file-lines"></i>
+          Download Full Research Paper (PDF)
         </a>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT & FOOTER (same as your original) -->
+  <!-- CONTACT -->
   <section id="contact" class="py-28 border-t border-slate-800" data-aos="fade-up">
     <div class="max-w-9xl mx-auto px-6 lg:px-16">
       <div class="grid md:grid-cols-2 gap-16">
@@ -479,6 +538,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="bg-slate-950 border-t border-slate-800 py-20">
     <div class="max-w-9xl mx-auto px-6 lg:px-16">
       <div class="grid md:grid-cols-4 gap-12">
@@ -491,7 +551,7 @@
             Software Developer • Red Team Operator • OSCP<br>
             Chennai, Tamil Nadu, India
           </p>
-          <a href="resume-maruthu-2026.pdf" download class="inline-flex items-center gap-3 text-teal-400 hover:text-teal-300 text-lg">
+          <a href="Resume/MARUTHU B_2127230801056.pdf" download class="inline-flex items-center gap-3 text-teal-400 hover:text-teal-300 text-lg">
             <i class="fa-solid fa-file-arrow-down"></i>
             Download Resume
           </a>
@@ -536,11 +596,13 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ once: true, duration: 800 });
+
     function toggleMobileMenu() {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     }
     document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
 
+    // Matrix Rain
     const canvas = document.getElementById('matrix');
     const ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth;
@@ -566,20 +628,34 @@
       canvas.height = window.innerHeight;
     });
 
+    // Typing animation
     const typed = document.getElementById('typed-text');
-    const roles = ["Software Developer", "Red Team Operator", "Secure Developer", "Offensive Security Engineer", "DevSecOps Practitioner"];
-    let roleIndex = 0, charIndex = 0, isDeleting = false;
+    const roles = [
+      "Software Developer",
+      "Red Team Operator",
+      "Secure Developer",
+      "Offensive Security Engineer",
+      "DevSecOps Practitioner"
+    ];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
     function typeEffect() {
       const current = roles[roleIndex];
       typed.textContent = current.substring(0, charIndex);
-      if (!isDeleting && charIndex < current.length) charIndex++;
-      else if (isDeleting && charIndex > 0) charIndex--;
-      else if (!isDeleting && charIndex === current.length) setTimeout(() => isDeleting = true, 1800);
-      else if (isDeleting && charIndex === 0) {
+      if (!isDeleting && charIndex < current.length) {
+        charIndex++;
+        setTimeout(typeEffect, 80);
+      } else if (isDeleting && charIndex > 0) {
+        charIndex--;
+        setTimeout(typeEffect, 50);
+      } else if (!isDeleting && charIndex === current.length) {
+        setTimeout(() => { isDeleting = true; }, 1800);
+      } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         roleIndex = (roleIndex + 1) % roles.length;
+        setTimeout(typeEffect, 400);
       }
-      setTimeout(typeEffect, isDeleting ? 50 : 80);
     }
     setTimeout(typeEffect, 1500);
   </script>
