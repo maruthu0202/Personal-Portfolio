@@ -118,9 +118,34 @@
       height: auto;
       object-fit: contain;
     }
+    .paper-preview {
+      width: 100%;
+      max-width: 480px;
+      height: 520px;
+      aspect-ratio: 210 / 297;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #334155;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+    }
+    .paper-preview img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
     .page-nav button:disabled {
       opacity: 0.4;
       cursor: not-allowed;
+    }
+    .page-nav button {
+      min-width: 140px;
     }
   </style>
 </head>
@@ -137,7 +162,7 @@
   <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800">
     <div class="max-w-9xl mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 bg-teal-600 rounded-xl flex items-center justify-center text-white font-bold text-xl mono">B</div>
+        <div class="w-10 h-10 bg-teal-600 rounded-xl flex items-center justify-center text-white font-bold text-xl mono">M</div>
         <span class="text-2xl font-bold tracking-tight">Maruthu</span>
       </div>
       <div class="hidden md:flex items-center gap-12 text-base font-medium">
@@ -178,7 +203,7 @@
         CHENNAI, TAMIL NADU
       </p>
       <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter mb-8">
-        Maruthu B
+        Maruthu
       </h1>
       <div class="text-3xl md:text-4xl lg:text-5xl text-slate-300 font-medium mb-10">
         <span id="typed-text" class="text-teal-400">Software Developer</span> & Red Team Operator
@@ -289,7 +314,6 @@
     <div class="max-w-9xl mx-auto px-6 lg:px-16">
       <h2 class="text-5xl md:text-6xl font-bold gradient-text text-center mb-20">Certifications</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
         <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
           <div class="preview-container">
             <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Blockchain%20Basics.jpg" alt="Blockchain Basics">
@@ -432,7 +456,6 @@
             <p class="text-slate-400 text-xs mt-1">14 Jul 2024</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -490,9 +513,11 @@
       <h2 class="text-5xl md:text-6xl font-bold gradient-text text-center mb-12">Research Paper</h2>
 
       <div class="max-w-5xl mx-auto bg-slate-900/70 border border-slate-700 rounded-2xl p-8 shadow-2xl">
-        <h3 class="text-2xl font-bold text-center mb-6">Comprehensive Analysis of Social Engineering Attacks on Social Media Platforms (2000-2030)</h3>
+        <h3 class="text-2xl font-bold text-center mb-6">
+          Comprehensive Analysis of Social Engineering Attacks on Social Media Platforms (2000-2030)
+        </h3>
 
-        <div class="preview-container mx-auto mb-8" id="paper-preview">
+        <div class="paper-preview" id="paper-preview">
           <img id="current-page-img" src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Article/article-images-0.jpg" alt="Research Paper Page 1">
         </div>
 
@@ -509,9 +534,8 @@
         </div>
 
         <div class="text-center mt-10">
-          <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Article/article-images-0.jpg" target="_blank" class="inline-flex items-center gap-3 text-teal-400 hover:text-teal-300 font-medium">
-            <i class="fa-solid fa-file-lines"></i>
-            View/Download Full PDF
+          <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Article/article-images-0.jpg" target="_blank" class="inline-flex items-center gap-3 text-teal-400 hover:text-teal-300 font-medium text-lg">
+            <i class="fa-solid fa-file-lines"></i> View/Download Full PDF
           </a>
         </div>
       </div>
