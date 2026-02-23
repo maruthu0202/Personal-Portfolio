@@ -120,22 +120,23 @@
     }
     .paper-preview {
       width: 100%;
-      max-width: 480px;
-      height: 520px;
-      aspect-ratio: 210 / 297;
+      max-width: 520px;               /* slightly wider card to respect image better */
+      height: 620px;                  /* increased height → more content visible */
+      aspect-ratio: 210 / 297;        /* A4 paper ratio */
       background: white;
       border-radius: 12px;
       overflow: hidden;
       border: 1px solid #334155;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 auto 2rem;
+      background: linear-gradient(to bottom, #ffffff, #f8f9fa); /* subtle paper gradient */
     }
     .paper-preview img {
-      max-width: 100%;
-      max-height: 100%;
+      max-width: 98%;
+      max-height: 98%;
       width: auto;
       height: auto;
       object-fit: contain;
@@ -162,7 +163,7 @@
   <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800">
     <div class="max-w-9xl mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 bg-teal-600 rounded-xl flex items-center justify-center text-white font-bold text-xl mono">M</div>
+        <div class="w-10 h-10 bg-teal-600 rounded-xl flex items-center justify-center text-white font-bold text-xl mono">B</div>
         <span class="text-2xl font-bold tracking-tight">Maruthu</span>
       </div>
       <div class="hidden md:flex items-center gap-12 text-base font-medium">
@@ -203,7 +204,7 @@
         CHENNAI, TAMIL NADU
       </p>
       <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter mb-8">
-        Maruthu
+        Maruthu B
       </h1>
       <div class="text-3xl md:text-4xl lg:text-5xl text-slate-300 font-medium mb-10">
         <span id="typed-text" class="text-teal-400">Software Developer</span> & Red Team Operator
@@ -314,6 +315,7 @@
     <div class="max-w-9xl mx-auto px-6 lg:px-16">
       <h2 class="text-5xl md:text-6xl font-bold gradient-text text-center mb-20">Certifications</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
         <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
           <div class="preview-container">
             <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Blockchain%20Basics.jpg" alt="Blockchain Basics">
@@ -456,6 +458,7 @@
             <p class="text-slate-400 text-xs mt-1">14 Jul 2024</p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -666,36 +669,26 @@
       canvas.height = window.innerHeight;
     });
 
-    // Typing animation
-    const typed = document.getElementById('typed-text');
-    const roles = [
-      "Software Developer",
-      "Red Team Operator",
-      "Secure Developer",
-      "Offensive Security Engineer",
-      "DevSecOps Practitioner"
-    ];
-    let roleIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    function typeEffect() {
-      const current = roles[roleIndex];
-      typed.textContent = current.substring(0, charIndex);
-      if (!isDeleting && charIndex < current.length) {
-        charIndex++;
-        setTimeout(typeEffect, 80);
-      } else if (isDeleting && charIndex > 0) {
-        charIndex--;
-        setTimeout(typeEffect, 50);
-      } else if (!isDeleting && charIndex === current.length) {
-        setTimeout(() => { isDeleting = true; }, 1800);
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        roleIndex = (roleIndex + 1) % roles.length;
-        setTimeout(typeEffect, 400);
+    // Typing animation (your requested version)
+    const texts = ["Java Developer", "Software Engineer", "Cybersecurity Analyst", "Ui UX Designer", "Ethical hacker", "Soc"];
+    let count = 0;
+    let index = 0;
+    let currentText = '';
+    let letter = '';
+    function type() {
+      if (count === texts.length) count = 0;
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+      document.getElementById('typed-text').textContent = letter;
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 2000); // pause before next word
+      } else {
+        setTimeout(type, 80);
       }
     }
-    setTimeout(typeEffect, 1500);
+    setTimeout(type, 1500); // start after page load
 
     // Research Paper Page Navigation
     const pages = [
