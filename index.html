@@ -118,29 +118,25 @@
       height: auto;
       object-fit: contain;
     }
-    .paper-preview {
-      width: 100%;
-      max-width: 560px;               /* slightly wider card to respect image better */
-      height: 720px;                  /* increased height → more content visible */
-      aspect-ratio: 210 / 297;        /* A4 paper ratio */
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid #334155;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 2rem;
-      background: linear-gradient(to bottom, #ffffff, #f8f9fa); /* subtle paper gradient */
-    }
-    .paper-preview img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-    }
+  .paper-preview {
+  width: 100%;
+  max-width: 520px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #334155;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  margin: 0 auto 2rem;
+  padding: 0;
+  display: block;                    /* no flex needed */
+}
+
+.paper-preview img {
+  display: block;
+  width: 100%;
+  height: auto;                      /* height follows natural image ratio */
+  object-fit: contain;
+}
     .page-nav button:disabled {
       opacity: 0.4;
       cursor: not-allowed;
