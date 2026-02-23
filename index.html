@@ -97,25 +97,30 @@
     .nav-link:hover {
       color: #14b8a6 !important;
     }
-    .preview-box {
-      height: 480px;
+    .preview-container {
+      width: 100%;
+      height: 380px;
       background: white;
       border-radius: 12px;
       overflow: hidden;
       border: 1px solid #334155;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      box-sizing: border-box;
     }
-    .preview-box img {
-      width: 100%;
-      height: 100%;
+    .preview-container img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
       object-fit: contain;
     }
     .page-nav button:disabled {
       opacity: 0.4;
       cursor: not-allowed;
-    }
-    .page-nav button {
-      transition: all 0.2s ease;
     }
   </style>
 </head>
@@ -284,9 +289,10 @@
     <div class="max-w-9xl mx-auto px-6 lg:px-16">
       <h2 class="text-5xl md:text-6xl font-bold gradient-text text-center mb-20">Certifications</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- All your certificates using exact filenames -->
+
+        <!-- Blockchain Basics -->
         <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
+          <div class="preview-container">
             <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Blockchain%20Basics.jpg" alt="Blockchain Basics">
           </div>
           <div class="p-6">
@@ -296,75 +302,10 @@
           </div>
         </div>
 
+        <!-- Introduction to Cybersecurity Fundamentals -->
         <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
-            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Corejava.jpg" alt="Core Java">
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-white">Core Java</h3>
-            <p class="text-teal-400 text-sm">Infosys Springboard</p>
-            <p class="text-slate-400 text-xs mt-1">November 2024</p>
-          </div>
-        </div>
-
-        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
-            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Coursera%20BLOCKCHAIN.jpg" alt="Coursera Blockchain">
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-white">Blockchain Basics</h3>
-            <p class="text-teal-400 text-sm">Coursera</p>
-            <p class="text-slate-400 text-xs mt-1">13 Aug 2025</p>
-          </div>
-        </div>
-
-        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
-            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Cybersecurity%20Essentials.jpg" alt="Cybersecurity Essentials">
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-white">Cybersecurity Essentials</h3>
-            <p class="text-teal-400 text-sm">Cisco Networking Academy</p>
-            <p class="text-slate-400 text-xs mt-1">26 Dec 2025</p>
-          </div>
-        </div>
-
-        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
-            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/DATABASE.jpg" alt="Database Design">
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-white">Database Design</h3>
-            <p class="text-teal-400 text-sm">Infosys Springboard</p>
-            <p class="text-slate-400 text-xs mt-1">14 Jul 2024</p>
-          </div>
-        </div>
-
-        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
-            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Data%20Structure%20and%20Algorithm.jpg" alt="Data Structures and Algorithms">
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-white">Data Structures and Algorithms</h3>
-            <p class="text-teal-400 text-sm">Infosys Springboard</p>
-            <p class="text-slate-400 text-xs mt-1">08 Nov 2024</p>
-          </div>
-        </div>
-
-        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
-            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Forge%20CyberSecurity%20Analyst.jpg" alt="Forage Cybersecurity Analyst">
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-white">Cybersecurity Analyst Job Simulation</h3>
-            <p class="text-teal-400 text-sm">Forage • Tata Group</p>
-            <p class="text-slate-400 text-xs mt-1">12 Jul 2025</p>
-          </div>
-        </div>
-
-        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
-            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Introduction%20to%20Cybersecurity%20Fudamentals.jpg" alt="Introduction to Cybersecurity">
+          <div class="preview-container">
+            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Introduction%20to%20Cybersecurity%20Fundamentals.jpg" alt="Introduction to Cybersecurity Fundamentals">
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold text-white">Introduction to Cybersecurity Fundamentals</h3>
@@ -373,8 +314,21 @@
           </div>
         </div>
 
+        <!-- Cybersecurity Essentials -->
         <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
+          <div class="preview-container">
+            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Cybersecurity%20Essentials.jpg" alt="Cybersecurity Essentials">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Cybersecurity Essentials</h3>
+            <p class="text-teal-400 text-sm">Cisco Networking Academy • EdCreate Foundation</p>
+            <p class="text-slate-400 text-xs mt-1">26 Dec 2025</p>
+          </div>
+        </div>
+
+        <!-- Introduction to Networking -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="preview-container">
             <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Introductionr%20To%20Networking.jpg" alt="Introduction to Networking">
           </div>
           <div class="p-6">
@@ -384,30 +338,21 @@
           </div>
         </div>
 
+        <!-- Testing throughout the Software Life Cycle -->
         <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
-            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/JAVA%202002.jpg" alt="Java Programming 2022">
+          <div class="preview-container">
+            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Software%20Life%20cycle.jpg" alt="Software Life Cycle Testing">
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold text-white">Java Programming 2022</h3>
+            <h3 class="text-xl font-bold text-white">Testing throughout the Software Life Cycle</h3>
             <p class="text-teal-400 text-sm">Infosys Springboard</p>
-            <p class="text-slate-400 text-xs mt-1">15 Nov 2024</p>
+            <p class="text-slate-400 text-xs mt-1">03 Apr 2025</p>
           </div>
         </div>
 
+        <!-- MySQL: Getting Started -->
         <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
-            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/JavaScript.jpg" alt="JavaScript">
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-white">JavaScript</h3>
-            <p class="text-teal-400 text-sm">Infosys Springboard</p>
-            <p class="text-slate-400 text-xs mt-1">29 Aug 2025</p>
-          </div>
-        </div>
-
-        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
+          <div class="preview-container">
             <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/MYSQL.jpg" alt="MySQL">
           </div>
           <div class="p-6">
@@ -417,8 +362,9 @@
           </div>
         </div>
 
+        <!-- Python Fundamentals for Beginners -->
         <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
+          <div class="preview-container">
             <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Python.jpg" alt="Python">
           </div>
           <div class="p-6">
@@ -428,14 +374,75 @@
           </div>
         </div>
 
+        <!-- Java Programming 2022 -->
         <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
-          <div class="preview-box">
-            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Software%20Life%20cycle.jpg" alt="Software Life Cycle">
+          <div class="preview-container">
+            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/JAVA%202002.jpg" alt="Java Programming 2022">
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold text-white">Testing throughout the Software Life Cycle</h3>
+            <h3 class="text-xl font-bold text-white">Java Programming 2022</h3>
             <p class="text-teal-400 text-sm">Infosys Springboard</p>
-            <p class="text-slate-400 text-xs mt-1">03 Apr 2025</p>
+            <p class="text-slate-400 text-xs mt-1">15 Nov 2024</p>
+          </div>
+        </div>
+
+        <!-- Data Structures and Algorithms -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="preview-container">
+            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Data%20Structure%20and%20Algorithm.jpg" alt="Data Structures and Algorithms">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Data Structures and Algorithms</h3>
+            <p class="text-teal-400 text-sm">Infosys Springboard</p>
+            <p class="text-slate-400 text-xs mt-1">08 Nov 2024</p>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="preview-container">
+            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/JavaScript.jpg" alt="JavaScript">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">JavaScript</h3>
+            <p class="text-teal-400 text-sm">Infosys Springboard</p>
+            <p class="text-slate-400 text-xs mt-1">29 Aug 2025</p>
+          </div>
+        </div>
+
+        <!-- Cybersecurity Analyst Job Simulation -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="preview-container">
+            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Forge%20CyberSecurity%20Analyst.jpg" alt="Cybersecurity Analyst Job Simulation">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Cybersecurity Analyst Job Simulation</h3>
+            <p class="text-teal-400 text-sm">Forage • Tata Group</p>
+            <p class="text-slate-400 text-xs mt-1">12 Jul 2025</p>
+          </div>
+        </div>
+
+        <!-- Start Programming in Core JAVA -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="preview-container">
+            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/Corejava.jpg" alt="Core Java">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Start Programming in Core Java</h3>
+            <p class="text-teal-400 text-sm">Infosys Springboard</p>
+            <p class="text-slate-400 text-xs mt-1">15 Nov 2024</p>
+          </div>
+        </div>
+
+        <!-- Database Design -->
+        <div class="bg-slate-900/70 border border-slate-700 rounded-2xl overflow-hidden hover:border-teal-600/50 transition">
+          <div class="preview-container">
+            <img src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Certificates/DATABASE.jpg" alt="Database Design">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white">Database Design</h3>
+            <p class="text-teal-400 text-sm">Infosys Springboard</p>
+            <p class="text-slate-400 text-xs mt-1">14 Jul 2024</p>
           </div>
         </div>
 
@@ -490,7 +497,7 @@
     </div>
   </section>
 
-  <!-- RESEARCH PAPER – SINGLE CARD WITH PAGE NAVIGATION -->
+  <!-- RESEARCH PAPER – SINGLE CARD WITH FIXED SIZE PREVIEW -->
   <section id="research" class="py-28 border-t border-slate-800 bg-slate-950/50" data-aos="fade-up">
     <div class="max-w-9xl mx-auto px-6 lg:px-16">
       <h2 class="text-5xl md:text-6xl font-bold gradient-text text-center mb-12">Research Paper</h2>
@@ -498,8 +505,8 @@
       <div class="max-w-5xl mx-auto bg-slate-900/70 border border-slate-700 rounded-2xl p-8 shadow-2xl">
         <h3 class="text-2xl font-bold text-center mb-6">Comprehensive Analysis of Social Engineering Attacks on Social Media Platforms (2000-2030)</h3>
 
-        <div class="preview-box mx-auto mb-8" id="paper-preview">
-          <img id="current-page-img" src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Article/article-images-0.jpg" alt="Page 1" class="w-full h-full object-contain">
+        <div class="preview-container mx-auto mb-8" id="paper-preview">
+          <img id="current-page-img" src="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Article/article-images-0.jpg" alt="Research Paper Page 1">
         </div>
 
         <div class="flex justify-center items-center gap-12 mt-6 page-nav">
@@ -515,7 +522,7 @@
         </div>
 
         <div class="text-center mt-10">
-          <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Article/article-images-0.jpg" target="_blank" class="inline-flex items-center gap-3 text-teal-400 hover:text-teal-300 font-medium text-lg">
+          <a href="https://github.com/maruthu0202/Personal-Portfolio/raw/main/Article/article-images-0.jpg" target="_blank" class="inline-flex items-center gap-3 text-teal-400 hover:text-teal-300 font-medium">
             <i class="fa-solid fa-file-lines"></i>
             View/Download Full PDF
           </a>
@@ -716,7 +723,7 @@
       }
     });
 
-    // Initial page load
+    // Initial page load for research paper
     updatePage();
   </script>
 </body>
