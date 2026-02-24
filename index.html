@@ -199,11 +199,14 @@
       <p class="text-teal-400 font-medium tracking-widest uppercase text-base md:text-lg mb-6">
         CHENNAI, TAMIL NADU
       </p>
-      <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter mb-8">
-        Maruthu B
+     <h1 class="hero-title text-white mb-6">
+        Hi, I'm <span class="text-teal-400">Maruthuthu B</span>
       </h1>
-      <div class="text-3xl md:text-4xl lg:text-5xl text-slate-300 font-medium mb-10">
-        <span id="typed-text" class="text-teal-400">Software Developer</span> & Red Team Operator
+
+      <div class="typing-container flex items-center justify-center">
+        <span>Aspiring </span>
+        <span id="typed-word" class="text-teal-400 font-semibold"></span>
+        <span class="cursor"></span>
       </div>
       <p class="text-xl md:text-2xl text-slate-400 max-w-5xl mx-auto mb-16 leading-relaxed">
         Building secure, scalable applications • Breaking systems responsibly • OSCP certified
@@ -666,25 +669,39 @@
     });
 
     // Typing animation (your requested version)
-    const texts = ["Java Developer", "Software Engineer", "Cybersecurity Analyst", "Ui UX Designer", "Ethical hacker", "Soc"];
-    let count = 0;
-    let index = 0;
-    let currentText = '';
-    let letter = '';
-    function type() {
-      if (count === texts.length) count = 0;
-      currentText = texts[count];
-      letter = currentText.slice(0, ++index);
-      document.getElementById('typed-text').textContent = letter;
-      if (letter.length === currentText.length) {
-        count++;
-        index = 0;
-        setTimeout(type, 2000); // pause before next word
+const words = ["Cybersecurity Analyst", "Ethical Hacker", "Secure Software Engineer","UI/UX Enthusiast","Java Developer"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typedWord = document.getElementById('typed-word');
+    const typingSpeed = 80;
+    const deleteSpeed = 50;
+    const pauseBeforeDelete = 2000;
+    const pauseBeforeNext = 500;
+
+    function typeHero() {
+      const currentWord = words[wordIndex];
+      if (isDeleting) {
+        typedWord.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
       } else {
-        setTimeout(type, 80);
+        typedWord.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
       }
-    }
-    setTimeout(type, 1500); // start after page load
+
+      let speed = isDeleting ? deleteSpeed : typingSpeed;
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        speed = pauseBeforeDelete;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        speed = pauseBeforeNext;
+      }
+
+      setTimeout(typeHero, speed);
+    }// start after page load
 
     // Research Paper Page Navigation
     const pages = [
